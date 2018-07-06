@@ -1,4 +1,4 @@
-use std::env;
+use std::env; // Or use std::env::function_name directly
 
 // Simple binary search on i32 arrays.
 // Simple function signature is:
@@ -34,7 +34,6 @@ fn binary_search_usize(a: &[i32], x: i32) -> i32 {
     let mut max = a.len() - 1; // max is usize as well now.
     while min < max {
         let mid = (min + max) / 2;
-        // Or let t = mid as i32;
         if x < a[mid] {
             max = mid - 1;
         } else if x > a[mid] {
