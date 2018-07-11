@@ -1,0 +1,6 @@
+[package]
+name = "kuf"
+version = "0.1.0"
+authors = ["Mehmet <mdakin@gmail.com>"]
+
+[dependencies]
